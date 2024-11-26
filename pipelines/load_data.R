@@ -38,4 +38,4 @@ result <- httr::content(response)
 
 # write CSV ----
 ts_fn = format(Sys.time(), "%Y%m%d_%H%M%S")
-write.csv(result, file = paste0("phone_screen_",ts_fn,".csv"), row.names = FALSE)
+write.csv(result, file = paste0("./output/phone_screen_",ts_fn,".csv"), row.names = FALSE)
